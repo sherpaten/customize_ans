@@ -56,7 +56,7 @@ export default function Contact() {
       
       <section className="w-full bg-[#0B0C10] py-20 px-6 sm:px-12 lg:px-20 border-b border-[#C5C6C7]/10">
         <div className="w-full text-center space-y-4">
-          <span className="text-xs uppercase tracking-widest text-[#66FCF1] font-bold">Start Your Creation</span>
+          <span className="text-xs uppercase tracking-widest text-[#1E3A8A] font-bold">Start Your Creation</span>
           <h1 className="text-4xl sm:text-6xl font-black text-white">Contact customize_ans Studio</h1>
           <p className="text-[#C5C6C7] text-sm sm:text-base">Have a custom garment idea or question? Send us a direct inquiry via WhatsApp.</p>
         </div>
@@ -67,7 +67,7 @@ export default function Contact() {
           
           <div className="bg-white border border-[#E5E7EB] p-8 rounded-3xl shadow-xl space-y-6">
             <h3 className="text-2xl font-bold text-black flex items-center gap-2">
-              <MessageSquare className="w-6 h-6 text-[#66FCF1]" /> Send Inquiry via WhatsApp
+              <MessageSquare className="w-6 h-6 text-[#1E3A8A]" /> Send Inquiry via WhatsApp
             </h3>
             
             <form onSubmit={handleSubmit} className="space-y-5">
@@ -79,7 +79,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required 
-                  className="w-full bg-[#1F2833] border border-[#C5C6C7]/20 rounded-xl p-4 text-sm text-white focus:outline-none focus:border-[#66FCF1] transition-colors" 
+                  className="w-full bg-[#1F2833] border border-[#C5C6C7]/20 rounded-xl p-4 text-sm text-white focus:outline-none focus:border-[#1E3A8A] transition-colors" 
                   placeholder="Enter your name" 
                 />
               </div>
@@ -92,7 +92,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required 
-                  className="w-full bg-[#1F2833] border border-[#C5C6C7]/20 rounded-xl p-4 text-sm text-white focus:outline-none focus:border-[#66FCF1] transition-colors" 
+                  className="w-full bg-[#1F2833] border border-[#C5C6C7]/20 rounded-xl p-4 text-sm text-white focus:outline-none focus:border-[#1E3A8A] transition-colors" 
                   placeholder="name@example.com" 
                 />
               </div>
@@ -103,7 +103,7 @@ export default function Contact() {
                   name="service"
                   value={formData.service}
                   onChange={handleChange}
-                  className="w-full bg-[#1F2833] border border-[#C5C6C7]/20 rounded-xl p-4 text-sm text-white focus:outline-none focus:border-[#66FCF1] transition-colors cursor-pointer"
+                  className="w-full bg-[#1F2833] border border-[#C5C6C7]/20 rounded-xl p-4 text-sm text-white focus:outline-none focus:border-[#1E3A8A] transition-colors cursor-pointer"
                 >
                   {servicesList.map((srv, idx) => (
                     <option key={idx} value={srv} className="bg-[#0B0C10] text-white">
@@ -121,14 +121,14 @@ export default function Contact() {
                   value={formData.details}
                   onChange={handleChange}
                   required 
-                  className="w-full bg-[#1F2833] border border-[#C5C6C7]/20 rounded-xl p-4 text-sm text-white focus:outline-none focus:border-[#66FCF1] transition-colors" 
+                  className="w-full bg-[#1F2833] border border-[#C5C6C7]/20 rounded-xl p-4 text-sm text-white focus:outline-none focus:border-[#1E3A8A] transition-colors" 
                   placeholder="Describe your garment and design vision..."
                 ></textarea>
               </div>
 
               <button 
                 type="submit" 
-                className="w-full py-4 rounded-xl bg-[#66FCF1] text-[#0B0C10] font-black text-sm shadow-lg flex items-center justify-center gap-2 hover:scale-[1.02] transition-transform"
+                className="w-full py-4 rounded-xl bg-[#1E3A8A] text-[#0B0C10] font-black text-sm shadow-lg flex items-center justify-center gap-2 hover:scale-[1.02] transition-transform"
               >
                 Send Inquiry on WhatsApp <Send className="w-4 h-4" />
               </button>
@@ -145,11 +145,11 @@ export default function Contact() {
             </div>
 
             <div className="space-y-4 text-sm text-black bg-white p-6 rounded-3xl border border-[#E5E7EB] shadow-xl">
-              <p className="flex items-center gap-3"><InstagramIcon className="w-5 h-5 text-[#66FCF1]" /> @customize_ans</p>
-              <p className="flex items-center gap-3"><Mail className="w-5 h-5 text-[#66FCF1]" /> customize.ans@gmail.com</p>
-              <p className="flex items-center gap-3"><Phone className="w-5 h-5 text-[#66FCF1]" /> +977 9746492408</p>
-              <p className="flex items-center gap-3"><MapPin className="w-5 h-5 text-[#66FCF1]" /> Boudha, Kathmandu</p>
-              <p className="flex items-center gap-3"><Clock className="w-5 h-5 text-[#66FCF1]" /> Garment Submissions: Mon - Sat</p>
+              <p className="flex items-center gap-3"><InstagramIcon className="w-5 h-5 text-[#1E3A8A]" /> @customize_ans</p>
+              <p className="flex items-center gap-3"><Mail className="w-5 h-5 text-[#1E3A8A]" /> customize.ans@gmail.com</p>
+              <p className="flex items-center gap-3"><Phone className="w-5 h-5 text-[#1E3A8A]" /> +977 9746492408</p>
+              <p className="flex items-center gap-3"><MapPin className="w-5 h-5 text-[#1E3A8A]" /> Boudha, Kathmandu</p>
+              <p className="flex items-center gap-3"><Clock className="w-5 h-5 text-[#1E3A8A]" /> Garment Submissions: Mon - Sat</p>
             </div>
           </div>
 
