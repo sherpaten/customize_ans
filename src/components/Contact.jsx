@@ -58,7 +58,7 @@ export default function Contact() {
         <div className="w-full text-center space-y-4">
           <span className="text-xs uppercase tracking-widest text-[#1E3A8A] font-bold">Start Your Creation</span>
           <h1 className="text-4xl sm:text-6xl font-black text-white">Contact customize_ans Studio</h1>
-          <p className="text-[#C5C6C7] text-sm sm:text-base">Have a custom garment idea or question? Send us a direct inquiry via WhatsApp.</p>
+          <p className="text-[#C5C6C7] text-sm sm:text-base">Have an idea you would love to wear? Tell us about your garment, your inspiration, and the details you have in mind. Your inquiry will open directly in WhatsApp.</p>
         </div>
       </section>
 
@@ -122,7 +122,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required 
                   className="w-full bg-[#1F2833] border border-[#C5C6C7]/20 rounded-xl p-4 text-sm text-white focus:outline-none focus:border-[#1E3A8A] transition-colors" 
-                  placeholder="Describe your garment and design vision..."
+                  placeholder="Tell us what item you have, its material and condition, the design or technique you like, preferred colours or placement, and any deadline or reference details..."
                 ></textarea>
               </div>
 
@@ -136,6 +136,22 @@ export default function Contact() {
           </div>
 
           <div className="flex flex-col justify-between space-y-8">
+            <div className="rounded-3xl bg-[#0B0C10] border border-[#C5C6C7]/15 p-7 sm:p-8 space-y-5">
+              <span className="text-xs uppercase tracking-widest text-[#1E3A8A] font-bold">Help Us Understand Your Idea</span>
+              <h2 className="text-2xl sm:text-3xl font-black text-white">A Few Details Make a Great Starting Point.</h2>
+              <p className="text-[#C5C6C7] text-sm leading-relaxed">
+                You do not need to know every technical detail. Share what you can, and we can talk through the creative possibilities together.
+              </p>
+              <ul className="space-y-3 text-sm text-white">
+                <li className="flex gap-3"><span className="text-[#1E3A8A] font-bold">01</span><span>The item you want customized and what it is made from, if known.</span></li>
+                <li className="flex gap-3"><span className="text-[#1E3A8A] font-bold">02</span><span>Photos of the garment or accessory, including the area you want customized.</span></li>
+                <li className="flex gap-3"><span className="text-[#1E3A8A] font-bold">03</span><span>Reference images, themes, colours, words, or other inspiration.</span></li>
+                <li className="flex gap-3"><span className="text-[#1E3A8A] font-bold">04</span><span>Your preferred placement and any important timing considerations.</span></li>
+              </ul>
+              <p className="text-[#C5C6C7] text-xs leading-relaxed border-t border-[#C5C6C7]/15 pt-4">
+                After receiving your inquiry, we can discuss the item's suitability, possible techniques, design direction, and the next steps before work begins.
+              </p>
+            </div>
             <div className="aspect-video w-full rounded-3xl overflow-hidden bg-[#0B0C10] border border-[#C5C6C7]/15 shadow-xl relative">
               <img 
                 src="/contact.jpeg" 
