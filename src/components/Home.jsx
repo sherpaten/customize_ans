@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Palette, ArrowRight, Sparkles, Scissors, Shirt, CheckCircle2, HeartHandshake, ShieldCheck, Star, Image as ImageIcon } from 'lucide-react';
 import '../styles/home.css';
 
@@ -13,7 +14,8 @@ import Gallary3Img from '../Assets/Gallary/Gallary3.jpeg';
 import Design1Img from '../Assets/Design/Design1.jpeg';
 import Design2Img from '../Assets/Design/Design2.jpeg';
 
-export default function Home({ setActiveTab, addToCart }) {
+export default function Home() {
+  const navigate = useNavigate();
   const featuredServices = [
     {
       id: "srv-1",
@@ -80,14 +82,14 @@ export default function Home({ setActiveTab, addToCart }) {
 
           <div className="flex flex-wrap items-center gap-4 pt-4">
             <button
-              onClick={() => setActiveTab('services')}
+              onClick={() => navigate('/services')}
               className="px-8 py-4 rounded-xl bg-[#66FCF1] text-[#0B0C10] font-black shadow-xl shadow-[#66FCF1]/20 hover:scale-105 transition-all flex items-center gap-2"
             >
               Explore Services <ArrowRight className="w-5 h-5" />
             </button>
 
             <button
-              onClick={() => setActiveTab('about')}
+              onClick={() => navigate('/about')}
               className="px-8 py-4 rounded-xl bg-[#1F2833]/90 hover:bg-[#45A29E]/30 text-white font-semibold border border-[#C5C6C7]/20 backdrop-blur-md transition-all"
             >
               Read Our Story
@@ -162,7 +164,7 @@ export default function Home({ setActiveTab, addToCart }) {
 
             <div className="pt-2">
               <button
-                onClick={() => setActiveTab('about')}
+                onClick={() => navigate('/about')}
                 className="px-6 py-3 rounded-xl bg-[#45A29E] text-[#0B0C10] font-bold text-xs shadow-md hover:bg-[#66FCF1] transition-all flex items-center gap-2 group"
               >
                 More About Us <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -201,7 +203,7 @@ export default function Home({ setActiveTab, addToCart }) {
             <p className="text-[#C5C6C7] text-sm mt-1">Turn your ideas into wearable art with our specialized techniques</p>
           </div>
           <button 
-            onClick={() => setActiveTab('services')}
+            onClick={() => navigate('/services')}
             className="px-6 py-3 rounded-xl bg-[#66FCF1]/10 hover:bg-[#66FCF1] text-[#66FCF1] hover:text-[#0B0C10] border border-[#66FCF1]/30 font-bold text-xs flex items-center gap-2 transition-all shrink-0"
           >
             More Services <ArrowRight className="w-4 h-4" />
@@ -228,7 +230,7 @@ export default function Home({ setActiveTab, addToCart }) {
               <div className="pt-6 mt-6 border-t border-[#E5E7EB] flex items-center justify-between">
                 <span className="text-xs text-[#66FCF1] font-semibold">{service.badge}</span>
                 <button 
-                  onClick={() => addToCart(service)}
+                  onClick={() => navigate('/contact', { state: { service: service.title } })}
                   className="px-4 py-2 rounded-xl bg-[#66FCF1] text-[#0B0C10] text-xs font-bold transition-all hover:scale-105"
                 >
                   Inquire Service
@@ -251,7 +253,7 @@ export default function Home({ setActiveTab, addToCart }) {
               Step inside our studio portfolio to discover custom hand-painted jackets, intricate embroidery, and artistic garment transformations crafted for our clients.
             </p>
             <button
-              onClick={() => setActiveTab('gallery')}
+              onClick={() => navigate('/gallery')}
               className="mt-2 px-8 py-3.5 rounded-xl bg-[#66FCF1] text-[#0B0C10] font-bold text-xs shadow-lg hover:scale-105 transition-transform flex items-center gap-2"
             >
               Explore Full Gallery <ArrowRight className="w-4 h-4" />
@@ -262,7 +264,7 @@ export default function Home({ setActiveTab, addToCart }) {
             {galleryPreview.map((img) => (
               <div 
                 key={img.id} 
-                onClick={() => setActiveTab('gallery')}
+                onClick={() => navigate('/gallery')}
                 className="relative aspect-square rounded-2xl overflow-hidden border border-[#C5C6C7]/20 bg-[#1F2833] cursor-pointer group/img transition-all duration-500 hover:scale-105 shadow-md"
               >
                 <img 
@@ -289,7 +291,7 @@ export default function Home({ setActiveTab, addToCart }) {
         </p>
         <button
           onClick={() => {
-            setActiveTab('contact');
+            navigate('/contact');
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
           className="px-9 py-4 rounded-xl bg-[#0B0C10] text-[#66FCF1] font-black text-sm shadow-2xl hover:scale-105 transition-transform"
