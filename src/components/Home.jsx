@@ -74,7 +74,7 @@ export default function Home({ setActiveTab, addToCart }) {
             <span className="text-[#66FCF1]">Without Limits.</span>
           </h1>
 
-          <p className="text-white text-base sm:text-lg leading-relaxed max-w-2xl font-medium">
+          <p className="text-[#C5C6C7] text-base sm:text-lg leading-relaxed max-w-2xl font-medium">
             We transform everyday garments provided by our customers into unique, personal expressions through hand painting, patchwork, embroidery, and custom techniques.
           </p>
 
@@ -95,11 +95,11 @@ export default function Home({ setActiveTab, addToCart }) {
           </div>
         </div>
 
-        <div className="absolute bottom-8 right-8 z-20 hidden lg:block max-w-xs bg-white border border-[#E5E7EB] p-4 rounded-2xl shadow-2xl">
-          <span className="text-[10px] uppercase tracking-widest text-black font-bold block mb-1">
+        <div className="absolute bottom-8 right-8 z-20 hidden lg:block max-w-xs bg-[#0B0C10]/90 backdrop-blur-xl border border-[#C5C6C7]/20 p-4 rounded-2xl shadow-2xl">
+          <span className="text-[10px] uppercase tracking-widest text-[#66FCF1] font-bold block mb-1">
             Featured Transformation
           </span>
-          <p className="text-xs font-bold text-black">
+          <p className="text-xs font-bold text-white">
             One of a Kind Hand Painted
           </p>
         </div>
