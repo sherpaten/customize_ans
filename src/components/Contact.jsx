@@ -20,7 +20,7 @@ export default function Contact() {
 
   const servicesList = [
     "Hand-Painted Garments",
-    "Patchwork & Appliqué",
+    "Patchwork & AppliquÃ©",
     "Customized Embroidery",
     "Customized Accessories",
     "Bespoke Design & Personalization",
@@ -39,7 +39,7 @@ export default function Contact() {
     const phoneNumber = "9779746492408";
 
     // Tailored WhatsApp message template for customize_ans Studio
-    const message = `? *New Custom Garment Inquiry — customize_ans Studio* ?%0A%0A` +
+    const message = `? *New Custom Garment Inquiry â€” customize_ans Studio* ?%0A%0A` +
       `*Client Name:* ${encodeURIComponent(formData.name)}%0A` +
       `*Email Address:* ${encodeURIComponent(formData.email)}%0A` +
       `*Requested Service:* ${encodeURIComponent(formData.service)}%0A%0A` +
@@ -63,8 +63,8 @@ export default function Contact() {
       <section className="w-full bg-[#1F2833] py-20 px-6 sm:px-12 lg:px-20">
         <div className="w-full grid md:grid-cols-2 gap-12 items-start">
           
-          <div className="bg-[#0B0C10] border border-[#C5C6C7]/15 p-8 rounded-3xl shadow-xl space-y-6">
-            <h3 className="text-2xl font-bold text-white flex items-center gap-2">
+          <div className="bg-white border border-[#E5E7EB] p-8 rounded-3xl shadow-xl space-y-6">
+            <h3 className="text-2xl font-bold text-black flex items-center gap-2">
               <MessageSquare className="w-6 h-6 text-[#66FCF1]" /> Send Inquiry via WhatsApp
             </h3>
             
@@ -142,7 +142,7 @@ export default function Contact() {
               />
             </div>
 
-            <div className="space-y-4 text-sm text-[#C5C6C7] bg-[#0B0C10] p-6 rounded-3xl border border-[#C5C6C7]/15 shadow-xl">
+            <div className="space-y-4 text-sm text-black bg-white p-6 rounded-3xl border border-[#E5E7EB] shadow-xl">
               <p className="flex items-center gap-3"><InstagramIcon className="w-5 h-5 text-[#66FCF1]" /> @customize_ans</p>
               <p className="flex items-center gap-3"><Mail className="w-5 h-5 text-[#66FCF1]" /> customize.ans@gmail.com</p>
               <p className="flex items-center gap-3"><Phone className="w-5 h-5 text-[#66FCF1]" /> +977 9746492408</p>
