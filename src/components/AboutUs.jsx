@@ -118,22 +118,22 @@ export default function AboutUs() {
       {/* SECTION 4: Studio Core Value Highlights (#1F2833 Slate) */}
       <section className="w-full bg-[#1F2833] py-20 px-6 sm:px-12 lg:px-20 border-t border-[#C5C6C7]/10">
         <div className="w-full grid sm:grid-cols-3 gap-8 text-center">
-          <div className="p-8 rounded-2xl bg-[#0B0C10] border border-[#C5C6C7]/15 space-y-3">
+          <div className="p-8 rounded-2xl bg-white border border-[#E5E7EB] space-y-3">
             <Palette className="w-8 h-8 text-[#66FCF1] mx-auto" />
-            <h4 className="text-white font-bold text-base">Art Meets Fashion</h4>
-            <p className="text-[#C5C6C7] text-xs">Transforming garments into canvases for your imagination.</p>
+            <h4 className="text-black font-bold text-base">Art Meets Fashion</h4>
+            <p className="text-black text-xs">Transforming garments into canvases for your imagination.</p>
           </div>
 
-          <div className="p-8 rounded-2xl bg-[#0B0C10] border border-[#C5C6C7]/15 space-y-3">
+          <div className="p-8 rounded-2xl bg-white border border-[#E5E7EB] space-y-3">
             <Sparkles className="w-8 h-8 text-[#66FCF1] mx-auto" />
-            <h4 className="text-white font-bold text-base">100% Personal Vision</h4>
-            <p className="text-[#C5C6C7] text-xs">Approached as an opportunity to experiment and explore.</p>
+            <h4 className="text-black font-bold text-base">100% Personal Vision</h4>
+            <p className="text-black text-xs">Approached as an opportunity to experiment and explore.</p>
           </div>
 
-          <div className="p-8 rounded-2xl bg-[#0B0C10] border border-[#C5C6C7]/15 space-y-3">
+          <div className="p-8 rounded-2xl bg-white border border-[#E5E7EB] space-y-3">
             <Heart className="w-8 h-8 text-[#66FCF1] mx-auto" />
-            <h4 className="text-white font-bold text-base">Crafted with Passion</h4>
-            <p className="text-[#C5C6C7] text-xs">Hand painting, embroidery, and custom techniques.</p>
+            <h4 className="text-black font-bold text-base">Crafted with Passion</h4>
+            <p className="text-black text-xs">Hand painting, embroidery, and custom techniques.</p>
           </div>
         </div>
       </section>
