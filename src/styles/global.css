@@ -27,6 +27,11 @@ main :where(h1, h2, h3, h4, h5, h6, p, li, label, blockquote, figcaption, dt, dd
   color: #ffffff !important;
 }
 
+/* Text inside white grid cards stays black for clear contrast. */
+main .bg-white :where(h1, h2, h3, h4, h5, h6, p, li, label, blockquote, figcaption, dt, dd) {
+  color: #000000 !important;
+}
+
 main :where(p, li, label, blockquote, figcaption, dt, dd) {
   font-size: calc(1em + 1px);
   font-weight: 600;
