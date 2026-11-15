@@ -17,7 +17,7 @@ export default function Services() {
       id: "srv-1",
       number: "01",
       title: "Hand-Painted Garments",
-      description: "Transform plain garments into wearable artworks through original illustrations, paintings, characters, florals, and artistic concepts.",
+      description: "Turn denim, jackets, shirts, and other suitable garments into wearable artwork. We can explore illustrations, florals, characters, lettering, graphic elements, or a theme that has personal meaning to you. The final concept is discussed around the garment and your reference ideas.",
       badge: "Popular",
       image: HandPaintedImg
     },
@@ -25,7 +25,7 @@ export default function Services() {
       id: "srv-2",
       number: "02",
       title: "Patchwork & Appliqué",
-      description: "Add dimension, texture, and character to your garments using creative fabric combinations, artistic patches, and appliqué techniques.",
+      description: "Bring new texture and visual interest to a garment with fabric shapes, layered details, contrast panels, and appliqué. We can discuss placement, colour combinations, and how the added elements can complement the original piece.",
       badge: "Trending",
       image: PatchworkImg
     },
@@ -33,7 +33,7 @@ export default function Services() {
       id: "srv-3",
       number: "03",
       title: "Customized Embroidery",
-      description: "Personalize your garments with embroidery, lettering, motifs, and detailed decorative elements that reflect your style and story.",
+      description: "Add a personal touch with stitched motifs, names, lettering, symbols, and decorative details. The scale and placement are considered in relation to the garment so the finished work feels intentional and balanced.",
       badge: "Bespoke",
       image: EmbroideryImg
     },
@@ -41,7 +41,7 @@ export default function Services() {
       id: "srv-4",
       number: "04",
       title: "Customized Accessories",
-      description: "Give accessories such as sneakers, tote bags, and other suitable items an artistic identity through personalized designs and creative detailing.",
+      description: "Explore custom artwork for suitable accessories such as tote bags, sneakers, and other items. Share the item and your idea with us so we can discuss the material, usable surface, and an appropriate creative approach.",
       badge: "Accessories",
       image: CustomizeImg
     },
@@ -49,7 +49,7 @@ export default function Services() {
       id: "srv-5",
       number: "05",
       title: "Bespoke Design & Personalization",
-      description: "Collaborate with us to develop a design from your own ideas, references, inspirations, or concepts. Each project is tailored to your creative vision.",
+      description: "Have an idea but not a finished design? We can develop a direction together using your references, interests, colour preferences, and inspiration. Each concept is discussed individually to keep the result connected to your vision.",
       badge: "Custom Vision",
       image: BespokeImg
     },
@@ -57,7 +57,7 @@ export default function Services() {
       id: "srv-6",
       number: "06",
       title: "Creative Garment Transformation",
-      description: "Reimagine existing garments by adding artistic details, refreshing their appearance, or giving them a new creative identity through customization.",
+      description: "Give a familiar piece a different look by adding artwork, decorative details, or creative fabric treatments. We first consider the garment's current condition and material, then discuss suitable ways to refresh its appearance.",
       badge: "Upcycle & Transform",
       image: Customize1Img
     }
@@ -118,7 +118,40 @@ export default function Services() {
         </div>
       </section>
 
-      {/* SECTION 3: Service Assurance Banner */}
+      {/* SECTION 3: How Custom Orders Work */}
+      <section className="w-full bg-[#0B0C10] py-20 px-6 sm:px-12 lg:px-20 border-t border-[#C5C6C7]/10">
+        <div className="max-w-7xl mx-auto space-y-10">
+          <div className="max-w-3xl mx-auto text-center space-y-3">
+            <span className="text-xs uppercase tracking-widest text-[#1E3A8A] font-bold">From Idea to Artwork</span>
+            <h2 className="text-3xl sm:text-5xl font-black text-white">How a Custom Project Comes Together</h2>
+            <p className="text-[#C5C6C7] text-sm sm:text-base leading-relaxed">Every garment and idea is different. We use a collaborative inquiry process to understand the piece and discuss a suitable creative direction.</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="rounded-2xl bg-[#1F2833] border border-[#C5C6C7]/15 p-7 space-y-3">
+              <span className="text-3xl font-black text-[#1E3A8A]">01</span>
+              <h3 className="text-white text-xl font-bold">Tell Us About Your Item</h3>
+              <p className="text-[#C5C6C7] text-sm leading-relaxed">Choose a service and share the type of garment or accessory, its material if known, its condition, and a few clear photos.</p>
+            </div>
+            <div className="rounded-2xl bg-[#1F2833] border border-[#C5C6C7]/15 p-7 space-y-3">
+              <span className="text-3xl font-black text-[#1E3A8A]">02</span>
+              <h3 className="text-white text-xl font-bold">Discuss the Design</h3>
+              <p className="text-[#C5C6C7] text-sm leading-relaxed">Share inspiration and preferred details. We can discuss suitable techniques, placement, and the practical considerations for your item.</p>
+            </div>
+            <div className="rounded-2xl bg-[#1F2833] border border-[#C5C6C7]/15 p-7 space-y-3">
+              <span className="text-3xl font-black text-[#1E3A8A]">03</span>
+              <h3 className="text-white text-xl font-bold">Confirm the Project</h3>
+              <p className="text-[#C5C6C7] text-sm leading-relaxed">Review the proposed direction and agreed project details with the studio before the customization work begins.</p>
+            </div>
+          </div>
+          <div className="text-center">
+            <button onClick={() => navigate('/contact')} className="px-7 py-3.5 rounded-xl bg-[#1E3A8A] text-white font-bold text-sm inline-flex items-center gap-2 hover:scale-105 transition-transform">
+              Tell Us About Your Project <ArrowRight className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 4: Service Assurance Banner */}
       <section className="w-full bg-[#0B0C10] py-20 px-6 sm:px-12 lg:px-20 border-t border-[#C5C6C7]/10">
         <div className="w-full grid sm:grid-cols-3 gap-8 text-center">
           <div className="space-y-2">
