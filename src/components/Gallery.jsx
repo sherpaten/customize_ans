@@ -86,7 +86,7 @@ export default function Gallery() {
                 onClick={() => setActiveTab(tab)}
                 className={`px-6 py-2.5 rounded-xl text-xs font-bold transition-all ${
                   activeTab === tab
-                    ? 'bg-[#1E3A8A] text-[#0B0C10] shadow-md'
+                    ? 'bg-[#1E3A8A] text-white shadow-md'
                     : 'bg-[#1F2833] border border-[#C5C6C7]/20 text-[#C5C6C7] hover:text-white'
                 }`}
               >
