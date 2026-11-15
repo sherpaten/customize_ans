@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { ArrowRight, Sparkles, CheckCircle2 } from 'lucide-react';
 
 // Direct Image Imports
@@ -9,7 +10,8 @@ import CustomizeImg from '../Assets/Customize/Customize.jpeg';
 import BespokeImg from '../Assets/Gallary/Gallary1.jpeg';
 import Customize1Img from '../Assets/Customize/Customize1.jpeg';
 
-export default function Services({ addToCart }) {
+export default function Services() {
+  const navigate = useNavigate();
   const servicesList = [
     {
       id: "srv-1",
@@ -105,7 +107,7 @@ export default function Services({ addToCart }) {
               <div className="pt-4 border-t border-[#E5E7EB] flex items-center justify-between">
                 <span className="text-[11px] text-[#16756F] font-semibold">Bespoke Garment Work</span>
                 <button
-                  onClick={() => addToCart(service)}
+                  onClick={() => navigate('/contact', { state: { service: service.title } })}
                   className="px-5 py-2.5 rounded-xl bg-[#66FCF1] text-[#0B0C10] font-bold text-xs shadow-md hover:scale-105 transition-transform"
                 >
                   Inquire & Book
