@@ -67,13 +67,13 @@ export default function Home() {
         </div>
 
         <div className="relative z-20 max-w-4xl space-y-6">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#66FCF1]/10 border border-[#66FCF1]/30 text-[#66FCF1] text-xs font-bold uppercase tracking-wider backdrop-blur-md">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1E3A8A]/10 border border-[#1E3A8A]/30 text-[#1E3A8A] text-xs font-bold uppercase tracking-wider backdrop-blur-md">
             <Sparkles className="w-4 h-4" /> Wearable Art Studio
           </div>
 
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-white leading-[1.1]">
             Where Art Meets Fashion, <br />
-            <span className="text-[#66FCF1]">Without Limits.</span>
+            <span className="text-[#1E3A8A]">Without Limits.</span>
           </h1>
 
           <p className="text-white text-base sm:text-lg leading-relaxed max-w-2xl font-medium">
@@ -83,14 +83,14 @@ export default function Home() {
           <div className="flex flex-wrap items-center gap-4 pt-4">
             <button
               onClick={() => navigate('/services')}
-              className="px-8 py-4 rounded-xl bg-[#66FCF1] text-[#0B0C10] font-black shadow-xl shadow-[#66FCF1]/20 hover:scale-105 transition-all flex items-center gap-2"
+              className="px-8 py-4 rounded-xl bg-[#1E3A8A] text-[#0B0C10] font-black shadow-xl shadow-[#1E3A8A]/20 hover:scale-105 transition-all flex items-center gap-2"
             >
               Explore Services <ArrowRight className="w-5 h-5" />
             </button>
 
             <button
               onClick={() => navigate('/about')}
-              className="px-8 py-4 rounded-xl bg-[#1F2833]/90 hover:bg-[#45A29E]/30 text-white font-semibold border border-[#C5C6C7]/20 backdrop-blur-md transition-all"
+              className="px-8 py-4 rounded-xl bg-[#1F2833]/90 hover:bg-[#1E3A8A]/30 text-white font-semibold border border-[#C5C6C7]/20 backdrop-blur-md transition-all"
             >
               Read Our Story
             </button>
@@ -98,7 +98,7 @@ export default function Home() {
         </div>
 
         <div className="absolute bottom-8 right-8 z-20 hidden lg:block max-w-xs bg-[#0B0C10]/90 backdrop-blur-xl border border-[#C5C6C7]/20 p-4 rounded-2xl shadow-2xl">
-          <span className="text-[10px] uppercase tracking-widest text-[#66FCF1] font-bold block mb-1">
+          <span className="text-[10px] uppercase tracking-widest text-[#1E3A8A] font-bold block mb-1">
             Featured Transformation
           </span>
           <p className="text-xs font-bold text-white">
@@ -110,7 +110,7 @@ export default function Home() {
       {/* SECTION 2: 3-Step Process */}
       <section className="w-full bg-[#1F2833] py-24 px-6 sm:px-12 lg:px-20 space-y-12 border-t border-[#C5C6C7]/10">
         <div className="text-center max-w-3xl mx-auto space-y-3">
-          <span className="text-xs font-mono text-[#66FCF1] uppercase tracking-widest font-bold">How It Works</span>
+          <span className="text-xs font-mono text-[#1E3A8A] uppercase tracking-widest font-bold">How It Works</span>
           <h2 className="text-3xl sm:text-5xl font-black text-white">3 Steps To Your Custom Piece</h2>
           <p className="text-[#C5C6C7] text-sm sm:text-base">Simple, collaborative, and tailored directly around your vision.</p>
         </div>
@@ -121,12 +121,12 @@ export default function Home() {
             { icon: Palette, step: "02", title: "Collaborate On Vision", text: "Share your concepts, favorite characters, hand painting ideas, or embroidery themes." },
             { icon: Scissors, step: "03", title: "Receive Wearable Art", text: "We meticulously craft your piece into an exclusive wearable expression carrying your story." }
           ].map((item, idx) => (
-            <div key={idx} className="bg-white border border-[#E5E7EB] p-8 rounded-2xl space-y-4 hover:border-[#66FCF1] transition-all group shadow-lg">
+            <div key={idx} className="bg-white border border-[#E5E7EB] p-8 rounded-2xl space-y-4 hover:border-[#1E3A8A] transition-all group shadow-lg">
               <div className="flex items-center justify-between">
-                <div className="w-12 h-12 rounded-xl bg-[#1F2833] flex items-center justify-center text-[#66FCF1] group-hover:bg-[#66FCF1] group-hover:text-[#0B0C10] transition-colors">
+                <div className="w-12 h-12 rounded-xl bg-[#1F2833] flex items-center justify-center text-[#1E3A8A] group-hover:bg-[#1E3A8A] group-hover:text-[#0B0C10] transition-colors">
                   <item.icon className="w-6 h-6" />
                 </div>
-                <span className="text-3xl font-black text-[#45A29E] font-mono">{item.step}</span>
+                <span className="text-3xl font-black text-[#1E3A8A] font-mono">{item.step}</span>
               </div>
               <h3 className="text-xl font-bold text-black">{item.title}</h3>
               <p className="text-black text-xs leading-relaxed">{item.text}</p>
@@ -139,10 +139,10 @@ export default function Home() {
       <section className="w-full bg-[#0B0C10] py-24 px-6 sm:px-12 lg:px-20 border-t border-[#C5C6C7]/10">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <span className="text-xs uppercase tracking-widest text-[#66FCF1] font-bold">Why Choose customize_ans</span>
+            <span className="text-xs uppercase tracking-widest text-[#1E3A8A] font-bold">Why Choose customize_ans</span>
             <h2 className="text-3xl sm:text-5xl font-black text-white leading-tight">
               Individuality Over Imitation, <br />
-              <span className="text-[#45A29E]">Creativity Over Convention.</span>
+              <span className="text-[#1E3A8A]">Creativity Over Convention.</span>
             </h2>
             <p className="text-[#C5C6C7] text-sm sm:text-base leading-relaxed">
               At customize_ans, we believe fashion is a canvas for your imagination. Every piece is approached as an opportunity to experiment and create something distinctive that reflects the person behind it.
@@ -156,7 +156,7 @@ export default function Home() {
                 "Garment upcycling & artistic transformation"
               ].map((point, index) => (
                 <div key={index} className="flex items-center gap-3 text-slate-200 text-xs sm:text-sm">
-                  <CheckCircle2 className="w-5 h-5 text-[#66FCF1] shrink-0" />
+                  <CheckCircle2 className="w-5 h-5 text-[#1E3A8A] shrink-0" />
                   <span>{point}</span>
                 </div>
               ))}
@@ -165,7 +165,7 @@ export default function Home() {
             <div className="pt-2">
               <button
                 onClick={() => navigate('/about')}
-                className="px-6 py-3 rounded-xl bg-[#45A29E] text-[#0B0C10] font-bold text-xs shadow-md hover:bg-[#66FCF1] transition-all flex items-center gap-2 group"
+                className="px-6 py-3 rounded-xl bg-[#1E3A8A] text-[#0B0C10] font-bold text-xs shadow-md hover:bg-[#1E3A8A] transition-all flex items-center gap-2 group"
               >
                 More About Us <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
@@ -174,19 +174,19 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 gap-4">
             <div className="bg-white border border-[#E5E7EB] p-6 rounded-2xl space-y-2">
-              <HeartHandshake className="w-8 h-8 text-[#66FCF1] mb-2" />
+              <HeartHandshake className="w-8 h-8 text-[#1E3A8A] mb-2" />
               <h4 className="text-black font-bold text-sm">Collaborative Vision</h4>
               <p className="text-black text-xs">Direct input & design consultation on every garment.</p>
             </div>
 
             <div className="bg-white border border-[#E5E7EB] p-6 rounded-2xl space-y-2">
-              <ShieldCheck className="w-8 h-8 text-[#66FCF1] mb-2" />
+              <ShieldCheck className="w-8 h-8 text-[#1E3A8A] mb-2" />
               <h4 className="text-black font-bold text-sm">Artistic Craftsmanship</h4>
               <p className="text-black text-xs">Premium textile pigments & detailed handwork.</p>
             </div>
 
             <div className="bg-white border border-[#E5E7EB] p-6 rounded-2xl space-y-2 sm:col-span-2">
-              <Star className="w-8 h-8 text-[#66FCF1] mb-2" />
+              <Star className="w-8 h-8 text-[#1E3A8A] mb-2" />
               <h4 className="text-black font-bold text-sm">One-of-a-Kind Expression</h4>
               <p className="text-black text-xs">Giving your garments a new identity and a story worth carrying.</p>
             </div>
@@ -198,13 +198,13 @@ export default function Home() {
       <section className="w-full bg-[#1F2833] py-24 px-6 sm:px-12 lg:px-20 space-y-12 border-t border-[#C5C6C7]/10">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
           <div>
-            <span className="text-xs uppercase tracking-widest text-[#66FCF1] font-bold">Customization Offerings</span>
+            <span className="text-xs uppercase tracking-widest text-[#1E3A8A] font-bold">Customization Offerings</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white mt-1">Our Featured Services</h2>
             <p className="text-[#C5C6C7] text-sm mt-1">Turn your ideas into wearable art with our specialized techniques</p>
           </div>
           <button 
             onClick={() => navigate('/services')}
-            className="px-6 py-3 rounded-xl bg-[#66FCF1]/10 hover:bg-[#66FCF1] text-[#66FCF1] hover:text-[#0B0C10] border border-[#66FCF1]/30 font-bold text-xs flex items-center gap-2 transition-all shrink-0"
+            className="px-6 py-3 rounded-xl bg-[#1E3A8A]/10 hover:bg-[#1E3A8A] text-[#1E3A8A] hover:text-[#0B0C10] border border-[#1E3A8A]/30 font-bold text-xs flex items-center gap-2 transition-all shrink-0"
           >
             More Services <ArrowRight className="w-4 h-4" />
           </button>
@@ -212,7 +212,7 @@ export default function Home() {
 
         <div className="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {featuredServices.map((service) => (
-            <div key={service.id} className="bg-white border border-[#E5E7EB] rounded-2xl p-6 flex flex-col justify-between hover:border-[#66FCF1] transition-all shadow-lg">
+            <div key={service.id} className="bg-white border border-[#E5E7EB] rounded-2xl p-6 flex flex-col justify-between hover:border-[#1E3A8A] transition-all shadow-lg">
               <div className="space-y-4">
                 <div className="aspect-video w-full rounded-xl overflow-hidden bg-[#1F2833] relative">
                   <img 
@@ -220,7 +220,7 @@ export default function Home() {
                     alt={service.title} 
                     className="w-full h-full object-cover"
                   />
-                  <span className="absolute top-3 left-3 bg-[#0B0C10]/90 text-[#66FCF1] text-xs px-2.5 py-1 rounded-full font-bold border border-[#C5C6C7]/20">
+                  <span className="absolute top-3 left-3 bg-[#0B0C10]/90 text-[#1E3A8A] text-xs px-2.5 py-1 rounded-full font-bold border border-[#C5C6C7]/20">
                     {service.number}
                   </span>
                 </div>
@@ -228,10 +228,10 @@ export default function Home() {
                 <p className="text-black text-xs leading-relaxed line-clamp-3">{service.description}</p>
               </div>
               <div className="pt-6 mt-6 border-t border-[#E5E7EB] flex items-center justify-between">
-                <span className="text-xs text-[#66FCF1] font-semibold">{service.badge}</span>
+                <span className="text-xs text-[#1E3A8A] font-semibold">{service.badge}</span>
                 <button 
                   onClick={() => navigate('/contact', { state: { service: service.title } })}
-                  className="px-4 py-2 rounded-xl bg-[#66FCF1] text-[#0B0C10] text-xs font-bold transition-all hover:scale-105"
+                  className="px-4 py-2 rounded-xl bg-[#1E3A8A] text-[#0B0C10] text-xs font-bold transition-all hover:scale-105"
                 >
                   Inquire Service
                 </button>
@@ -245,7 +245,7 @@ export default function Home() {
       <section className="w-full bg-[#0B0C10] py-24 px-6 sm:px-12 lg:px-20 border-t border-[#C5C6C7]/10">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-5">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#66FCF1]/10 border border-[#66FCF1]/30 text-[#66FCF1] text-xs font-bold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1E3A8A]/10 border border-[#1E3A8A]/30 text-[#1E3A8A] text-xs font-bold uppercase tracking-wider">
               <ImageIcon className="w-4 h-4" /> Portfolio Showcase
             </div>
             <h2 className="text-3xl sm:text-5xl font-extrabold text-white">Explore Transformed Masterpieces</h2>
@@ -254,7 +254,7 @@ export default function Home() {
             </p>
             <button
               onClick={() => navigate('/gallery')}
-              className="mt-2 px-8 py-3.5 rounded-xl bg-[#66FCF1] text-[#0B0C10] font-bold text-xs shadow-lg hover:scale-105 transition-transform flex items-center gap-2"
+              className="mt-2 px-8 py-3.5 rounded-xl bg-[#1E3A8A] text-[#0B0C10] font-bold text-xs shadow-lg hover:scale-105 transition-transform flex items-center gap-2"
             >
               Explore Full Gallery <ArrowRight className="w-4 h-4" />
             </button>
@@ -274,7 +274,7 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0B0C10] via-transparent to-transparent opacity-80 group-hover/img:opacity-40 transition-opacity duration-500" />
                 <div className="absolute bottom-3 left-3 right-3 z-10">
-                  <span className="text-[10px] text-[#66FCF1] font-bold uppercase">{img.category}</span>
+                  <span className="text-[10px] text-[#1E3A8A] font-bold uppercase">{img.category}</span>
                   <p className="text-xs font-bold text-white truncate">{img.title}</p>
                 </div>
               </div>
@@ -284,7 +284,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 6: Call-To-Action Banner */}
-      <section className="w-full bg-gradient-to-r from-[#66FCF1] via-[#45A29E] to-[#1F2833] py-20 px-6 sm:px-12 text-center text-[#0B0C10] space-y-6">
+      <section className="w-full bg-gradient-to-r from-[#1E3A8A] via-[#1E3A8A] to-[#1F2833] py-20 px-6 sm:px-12 text-center text-[#0B0C10] space-y-6">
         <h2 className="text-3xl sm:text-5xl font-black text-[#0B0C10]">Have a Garment Waiting for a New Story?</h2>
         <p className="text-[#0B0C10]/90 text-sm sm:text-base font-semibold max-w-2xl mx-auto">
           Send us your ideas, references, or concepts today and let's turn your clothing into a custom masterpiece.
@@ -294,7 +294,7 @@ export default function Home() {
             navigate('/contact');
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
-          className="px-9 py-4 rounded-xl bg-[#0B0C10] text-[#66FCF1] font-black text-sm shadow-2xl hover:scale-105 transition-transform"
+          className="px-9 py-4 rounded-xl bg-[#0B0C10] text-[#1E3A8A] font-black text-sm shadow-2xl hover:scale-105 transition-transform"
         >
           Start Your Custom Order Inquiry
         </button>
