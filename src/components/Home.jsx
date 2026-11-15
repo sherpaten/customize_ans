@@ -171,22 +171,22 @@ export default function Home({ setActiveTab, addToCart }) {
           </div>
 
           <div className="grid sm:grid-cols-2 gap-4">
-            <div className="bg-[#1F2833] border border-[#C5C6C7]/15 p-6 rounded-2xl space-y-2">
+            <div className="bg-white border border-[#E5E7EB] p-6 rounded-2xl space-y-2">
               <HeartHandshake className="w-8 h-8 text-[#66FCF1] mb-2" />
-              <h4 className="text-white font-bold text-sm">Collaborative Vision</h4>
-              <p className="text-[#C5C6C7] text-xs">Direct input & design consultation on every garment.</p>
+              <h4 className="text-black font-bold text-sm">Collaborative Vision</h4>
+              <p className="text-black text-xs">Direct input & design consultation on every garment.</p>
             </div>
 
             <div className="bg-[#1F2833] border border-[#C5C6C7]/15 p-6 rounded-2xl space-y-2">
               <ShieldCheck className="w-8 h-8 text-[#66FCF1] mb-2" />
-              <h4 className="text-white font-bold text-sm">Artistic Craftsmanship</h4>
-              <p className="text-[#C5C6C7] text-xs">Premium textile pigments & detailed handwork.</p>
+              <h4 className="text-black font-bold text-sm">Artistic Craftsmanship</h4>
+              <p className="text-black text-xs">Premium textile pigments & detailed handwork.</p>
             </div>
 
             <div className="bg-[#1F2833] border border-[#C5C6C7]/15 p-6 rounded-2xl space-y-2 sm:col-span-2">
               <Star className="w-8 h-8 text-[#66FCF1] mb-2" />
-              <h4 className="text-white font-bold text-sm">One-of-a-Kind Expression</h4>
-              <p className="text-[#C5C6C7] text-xs">Giving your garments a new identity and a story worth carrying.</p>
+              <h4 className="text-black font-bold text-sm">One-of-a-Kind Expression</h4>
+              <p className="text-black text-xs">Giving your garments a new identity and a story worth carrying.</p>
             </div>
           </div>
         </div>
