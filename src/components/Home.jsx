@@ -74,7 +74,7 @@ export default function Home({ setActiveTab, addToCart }) {
             <span className="text-[#66FCF1]">Without Limits.</span>
           </h1>
 
-          <p className="text-[#C5C6C7] text-base sm:text-lg leading-relaxed max-w-2xl font-medium">
+          <p className="text-white text-base sm:text-lg leading-relaxed max-w-2xl font-medium">
             We transform everyday garments provided by our customers into unique, personal expressions through hand painting, patchwork, embroidery, and custom techniques.
           </p>
 
