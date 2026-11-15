@@ -108,7 +108,7 @@ export default function Services() {
                 <span className="text-[11px] text-[#16756F] font-semibold">Bespoke Garment Work</span>
                 <button
                   onClick={() => navigate('/contact', { state: { service: service.title } })}
-                  className="px-5 py-2.5 rounded-xl bg-[#1E3A8A] text-[#0B0C10] font-bold text-xs shadow-md hover:scale-105 transition-transform"
+                  className="px-5 py-2.5 rounded-xl bg-[#1E3A8A] text-white font-bold text-xs shadow-md hover:scale-105 transition-transform"
                 >
                   Inquire & Book
                 </button>
