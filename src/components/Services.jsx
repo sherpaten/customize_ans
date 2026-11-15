@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowRight, Sparkles, CheckCircle2 } from 'lucide-react';
 
 // Direct Image Imports
-import HandprintImg from '../Assets/Gallary/Handprint.jpeg';
+import HandPaintedImg from '../Assets/Design/Design3.jpeg';
 import PatchworkImg from '../Assets/Patchwork & Appliqué.jpeg';
 import Design2Img from '../Assets/Design/Design2.jpeg';
 import CustomizeImg from '../Assets/Customize/Customize.jpeg';
@@ -17,7 +17,7 @@ export default function Services({ addToCart }) {
       title: "Hand-Painted Garments",
       description: "Transform plain garments into wearable artworks through original illustrations, paintings, characters, florals, and artistic concepts.",
       badge: "Popular",
-      image: HandprintImg
+      image: HandPaintedImg
     },
     {
       id: "srv-2",
