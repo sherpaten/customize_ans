@@ -74,7 +74,7 @@ export default function Gallery() {
       {/* SECTION 1: Header & Category Controls */}
       <section className="w-full bg-[#0B0C10] py-20 px-6 sm:px-12 lg:px-20 border-b border-[#C5C6C7]/10">
         <div className="w-full text-center space-y-6">
-          <span className="text-xs uppercase tracking-widest text-[#66FCF1] font-bold">PORTFOLIO SHOWCASE</span>
+          <span className="text-xs uppercase tracking-widest text-[#1E3A8A] font-bold">PORTFOLIO SHOWCASE</span>
           <h1 className="text-4xl sm:text-6xl font-black text-white">Art Studio Gallery</h1>
           <p className="text-[#C5C6C7] text-sm sm:text-base">Explore transformed garments, custom handprints, and bespoke client creations</p>
 
@@ -86,7 +86,7 @@ export default function Gallery() {
                 onClick={() => setActiveTab(tab)}
                 className={`px-6 py-2.5 rounded-xl text-xs font-bold transition-all ${
                   activeTab === tab
-                    ? 'bg-[#66FCF1] text-[#0B0C10] shadow-md'
+                    ? 'bg-[#1E3A8A] text-[#0B0C10] shadow-md'
                     : 'bg-[#1F2833] border border-[#C5C6C7]/20 text-[#C5C6C7] hover:text-white'
                 }`}
               >
@@ -112,10 +112,10 @@ export default function Gallery() {
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0B0C10]/95 via-[#0B0C10]/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-5 flex flex-col justify-end">
-                <span className="text-[10px] text-[#66FCF1] font-bold tracking-wider uppercase">{item.folder}</span>
+                <span className="text-[10px] text-[#1E3A8A] font-bold tracking-wider uppercase">{item.folder}</span>
                 <p className="text-sm font-bold text-white mt-1 flex items-center justify-between">
                   <span>{item.title}</span>
-                  <ZoomIn className="w-4 h-4 text-[#66FCF1]" />
+                  <ZoomIn className="w-4 h-4 text-[#1E3A8A]" />
                 </p>
               </div>
             </div>
@@ -129,7 +129,7 @@ export default function Gallery() {
           <div className="max-w-4xl w-full bg-[#1F2833] rounded-3xl overflow-hidden border border-[#C5C6C7]/20 relative shadow-2xl">
             <button 
               onClick={() => setSelectedGalleryImg(null)}
-              className="absolute top-4 right-4 z-10 p-2 bg-[#0B0C10]/80 rounded-full text-white hover:bg-[#45A29E] transition-colors"
+              className="absolute top-4 right-4 z-10 p-2 bg-[#0B0C10]/80 rounded-full text-white hover:bg-[#1E3A8A] transition-colors"
             >
               <X className="w-5 h-5" />
             </button>
@@ -141,7 +141,7 @@ export default function Gallery() {
               />
             </div>
             <div className="p-6">
-              <span className="text-xs text-[#66FCF1] font-bold uppercase tracking-wider">{selectedGalleryImg.folder}</span>
+              <span className="text-xs text-[#1E3A8A] font-bold uppercase tracking-wider">{selectedGalleryImg.folder}</span>
               <h3 className="text-2xl font-bold text-white mt-1">{selectedGalleryImg.title}</h3>
             </div>
           </div>
