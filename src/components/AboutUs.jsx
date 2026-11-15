@@ -45,7 +45,7 @@ export default function AboutUs() {
             <div className="absolute inset-0 bg-gradient-to-t from-[#0B0C10] via-transparent to-transparent opacity-50" />
             <div className="absolute bottom-6 left-6 right-6">
               <span className="text-[10px] text-[#66FCF1] font-mono font-bold uppercase tracking-wider block">Lead Artist & Creator</span>
-              <p className="text-sm font-bold text-white">customize_ans Studio</p>
+              <p className="text-sm font-bold text-white">customize_ans</p>
             </div>
           </div>
 
