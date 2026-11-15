@@ -18,6 +18,14 @@ body {
   margin: 0;
 }
 
+/* Site-wide body copy: one pixel larger, black, and semi-bold.
+   Headings and action controls keep their existing visual hierarchy. */
+#root :where(p, li, label, blockquote, figcaption, dt, dd) {
+  font-size: calc(1em + 1px);
+  font-weight: 600;
+  color: #000000;
+}
+
 /* Keep the main page sections on the new neon-blue canvas. */
 main section {
   background-color: #006BFF !important;
