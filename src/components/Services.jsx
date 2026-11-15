@@ -6,7 +6,7 @@ import HandPaintedImg from '../Assets/Design/Design3.jpeg';
 import PatchworkImg from '../Assets/Patchwork & Appliqué.jpeg';
 import EmbroideryImg from '../Assets/Gallary/Gallary3.jpeg';
 import CustomizeImg from '../Assets/Customize/Customize.jpeg';
-import ArtImg from '../Assets/Design/Art.jpeg';
+import BespokeImg from '../Assets/Gallary/Gallary1.jpeg';
 import Customize1Img from '../Assets/Customize/Customize1.jpeg';
 
 export default function Services({ addToCart }) {
@@ -49,7 +49,7 @@ export default function Services({ addToCart }) {
       title: "Bespoke Design & Personalization",
       description: "Collaborate with us to develop a design from your own ideas, references, inspirations, or concepts. Each project is tailored to your creative vision.",
       badge: "Custom Vision",
-      image: ArtImg
+      image: BespokeImg
     },
     {
       id: "srv-6",
