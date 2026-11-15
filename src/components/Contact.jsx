@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Mail, Clock, Send, Phone, MapPin, MessageSquare } from 'lucide-react';
 
 // Custom Instagram Icon (Matches Lucide styling)
@@ -11,10 +12,11 @@ const InstagramIcon = ({ className }) => (
 );
 
 export default function Contact() {
+  const location = useLocation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    service: 'Hand-Painted Garments',
+    service: location.state?.service || 'Hand-Painted Garments',
     details: ''
   });
 
