@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  color-scheme: dark;
+  background: #006BFF;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  background-color: #006BFF;
+}
+
+body {
+  margin: 0;
+}
+
+/* Keep the main page sections on the new neon-blue canvas. */
+main section {
+  background-color: #006BFF !important;
+}
+
+/* Preserve image overlays and decorative gradients while using neon blue as
+   the base color beneath them. */
+main section[class*="bg-gradient"] {
+  background-color: #006BFF !important;
+}
+
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
@@ -15,13 +42,16 @@
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
-  background: #090d16;
+  background: #0055cc;
 }
+
 ::-webkit-scrollbar-thumb {
-  background: #1e293b;
+  background: #003f99;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-  background: #334155;
+  background: #002f73;
 }
