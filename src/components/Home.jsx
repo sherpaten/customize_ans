@@ -119,15 +119,15 @@ export default function Home({ setActiveTab, addToCart }) {
             { icon: Palette, step: "02", title: "Collaborate On Vision", text: "Share your concepts, favorite characters, hand painting ideas, or embroidery themes." },
             { icon: Scissors, step: "03", title: "Receive Wearable Art", text: "We meticulously craft your piece into an exclusive wearable expression carrying your story." }
           ].map((item, idx) => (
-            <div key={idx} className="bg-[#0B0C10] border border-[#C5C6C7]/15 p-8 rounded-2xl space-y-4 hover:border-[#66FCF1]/50 transition-all group shadow-lg">
+            <div key={idx} className="bg-white border border-[#E5E7EB] p-8 rounded-2xl space-y-4 hover:border-[#66FCF1] transition-all group shadow-lg">
               <div className="flex items-center justify-between">
                 <div className="w-12 h-12 rounded-xl bg-[#1F2833] flex items-center justify-center text-[#66FCF1] group-hover:bg-[#66FCF1] group-hover:text-[#0B0C10] transition-colors">
                   <item.icon className="w-6 h-6" />
                 </div>
                 <span className="text-3xl font-black text-[#45A29E] font-mono">{item.step}</span>
               </div>
-              <h3 className="text-xl font-bold text-white">{item.title}</h3>
-              <p className="text-[#C5C6C7] text-xs leading-relaxed">{item.text}</p>
+              <h3 className="text-xl font-bold text-black">{item.title}</h3>
+              <p className="text-black text-xs leading-relaxed">{item.text}</p>
             </div>
           ))}
         </div>
@@ -177,13 +177,13 @@ export default function Home({ setActiveTab, addToCart }) {
               <p className="text-black text-xs">Direct input & design consultation on every garment.</p>
             </div>
 
-            <div className="bg-[#1F2833] border border-[#C5C6C7]/15 p-6 rounded-2xl space-y-2">
+            <div className="bg-white border border-[#E5E7EB] p-6 rounded-2xl space-y-2">
               <ShieldCheck className="w-8 h-8 text-[#66FCF1] mb-2" />
               <h4 className="text-black font-bold text-sm">Artistic Craftsmanship</h4>
               <p className="text-black text-xs">Premium textile pigments & detailed handwork.</p>
             </div>
 
-            <div className="bg-[#1F2833] border border-[#C5C6C7]/15 p-6 rounded-2xl space-y-2 sm:col-span-2">
+            <div className="bg-white border border-[#E5E7EB] p-6 rounded-2xl space-y-2 sm:col-span-2">
               <Star className="w-8 h-8 text-[#66FCF1] mb-2" />
               <h4 className="text-black font-bold text-sm">One-of-a-Kind Expression</h4>
               <p className="text-black text-xs">Giving your garments a new identity and a story worth carrying.</p>
@@ -210,7 +210,7 @@ export default function Home({ setActiveTab, addToCart }) {
 
         <div className="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {featuredServices.map((service) => (
-            <div key={service.id} className="bg-[#0B0C10] border border-[#C5C6C7]/15 rounded-2xl p-6 flex flex-col justify-between hover:border-[#66FCF1]/40 transition-all shadow-lg">
+            <div key={service.id} className="bg-white border border-[#E5E7EB] rounded-2xl p-6 flex flex-col justify-between hover:border-[#66FCF1] transition-all shadow-lg">
               <div className="space-y-4">
                 <div className="aspect-video w-full rounded-xl overflow-hidden bg-[#1F2833] relative">
                   <img 
@@ -222,10 +222,10 @@ export default function Home({ setActiveTab, addToCart }) {
                     {service.number}
                   </span>
                 </div>
-                <h3 className="text-xl font-bold text-white">{service.title}</h3>
-                <p className="text-[#C5C6C7] text-xs leading-relaxed line-clamp-3">{service.description}</p>
+                <h3 className="text-xl font-bold text-black">{service.title}</h3>
+                <p className="text-black text-xs leading-relaxed line-clamp-3">{service.description}</p>
               </div>
-              <div className="pt-6 mt-6 border-t border-[#C5C6C7]/15 flex items-center justify-between">
+              <div className="pt-6 mt-6 border-t border-[#E5E7EB] flex items-center justify-between">
                 <span className="text-xs text-[#66FCF1] font-semibold">{service.badge}</span>
                 <button 
                   onClick={() => addToCart(service)}
