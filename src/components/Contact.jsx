@@ -128,7 +128,7 @@ export default function Contact() {
 
               <button 
                 type="submit" 
-                className="w-full py-4 rounded-xl bg-[#1E3A8A] text-[#0B0C10] font-black text-sm shadow-lg flex items-center justify-center gap-2 hover:scale-[1.02] transition-transform"
+                className="w-full py-4 rounded-xl bg-[#1E3A8A] text-white font-black text-sm shadow-lg flex items-center justify-center gap-2 hover:scale-[1.02] transition-transform"
               >
                 Send Inquiry on WhatsApp <Send className="w-4 h-4" />
               </button>
