@@ -83,7 +83,7 @@ export default function Home() {
           <div className="flex flex-wrap items-center gap-4 pt-4">
             <button
               onClick={() => navigate('/services')}
-              className="px-8 py-4 rounded-xl bg-[#1E3A8A] text-[#0B0C10] font-black shadow-xl shadow-[#1E3A8A]/20 hover:scale-105 transition-all flex items-center gap-2"
+              className="px-8 py-4 rounded-xl bg-[#1E3A8A] text-white font-black shadow-xl shadow-[#1E3A8A]/20 hover:scale-105 transition-all flex items-center gap-2"
             >
               Explore Services <ArrowRight className="w-5 h-5" />
             </button>
@@ -165,7 +165,7 @@ export default function Home() {
             <div className="pt-2">
               <button
                 onClick={() => navigate('/about')}
-                className="px-6 py-3 rounded-xl bg-[#1E3A8A] text-[#0B0C10] font-bold text-xs shadow-md hover:bg-[#1E3A8A] transition-all flex items-center gap-2 group"
+                className="px-6 py-3 rounded-xl bg-[#1E3A8A] text-white font-bold text-xs shadow-md hover:bg-[#1E3A8A] transition-all flex items-center gap-2 group"
               >
                 More About Us <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
@@ -204,7 +204,7 @@ export default function Home() {
           </div>
           <button 
             onClick={() => navigate('/services')}
-            className="px-6 py-3 rounded-xl bg-[#1E3A8A]/10 hover:bg-[#1E3A8A] text-[#1E3A8A] hover:text-[#0B0C10] border border-[#1E3A8A]/30 font-bold text-xs flex items-center gap-2 transition-all shrink-0"
+            className="px-6 py-3 rounded-xl bg-[#1E3A8A]/10 hover:bg-[#1E3A8A] text-white hover:text-white border border-[#1E3A8A]/30 font-bold text-xs flex items-center gap-2 transition-all shrink-0"
           >
             More Services <ArrowRight className="w-4 h-4" />
           </button>
@@ -231,7 +231,7 @@ export default function Home() {
                 <span className="text-xs text-[#1E3A8A] font-semibold">{service.badge}</span>
                 <button 
                   onClick={() => navigate('/contact', { state: { service: service.title } })}
-                  className="px-4 py-2 rounded-xl bg-[#1E3A8A] text-[#0B0C10] text-xs font-bold transition-all hover:scale-105"
+                  className="px-4 py-2 rounded-xl bg-[#1E3A8A] text-white text-xs font-bold transition-all hover:scale-105"
                 >
                   Inquire Service
                 </button>
@@ -254,7 +254,7 @@ export default function Home() {
             </p>
             <button
               onClick={() => navigate('/gallery')}
-              className="mt-2 px-8 py-3.5 rounded-xl bg-[#1E3A8A] text-[#0B0C10] font-bold text-xs shadow-lg hover:scale-105 transition-transform flex items-center gap-2"
+              className="mt-2 px-8 py-3.5 rounded-xl bg-[#1E3A8A] text-white font-bold text-xs shadow-lg hover:scale-105 transition-transform flex items-center gap-2"
             >
               Explore Full Gallery <ArrowRight className="w-4 h-4" />
             </button>
@@ -294,7 +294,7 @@ export default function Home() {
             navigate('/contact');
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
-          className="px-9 py-4 rounded-xl bg-[#0B0C10] text-[#1E3A8A] font-black text-sm shadow-2xl hover:scale-105 transition-transform"
+          className="px-9 py-4 rounded-xl bg-[#0B0C10] text-white font-black text-sm shadow-2xl hover:scale-105 transition-transform"
         >
           Start Your Custom Order Inquiry
         </button>
