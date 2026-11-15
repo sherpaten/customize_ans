@@ -76,7 +76,7 @@ export default function Gallery() {
         <div className="w-full text-center space-y-6">
           <span className="text-xs uppercase tracking-widest text-[#1E3A8A] font-bold">PORTFOLIO SHOWCASE</span>
           <h1 className="text-4xl sm:text-6xl font-black text-white">Art Studio Gallery</h1>
-          <p className="text-[#C5C6C7] text-sm sm:text-base">Explore transformed garments, custom handprints, and bespoke client creations</p>
+          <p className="text-[#C5C6C7] text-sm sm:text-base">Explore a collection of creative garment transformations, hand-painted details, embroidery, and personalized design work. Each piece is an example of how an everyday item can become a more individual expression.</p>
 
           {/* Navigation Filter Pills: All | Design | Customize */}
           <div className="flex justify-center gap-3 pt-4">
@@ -97,7 +97,16 @@ export default function Gallery() {
         </div>
       </section>
 
-      {/* SECTION 2: Image Portfolio Showcase Grid */}
+      <section className="w-full bg-[#0B0C10] px-6 sm:px-12 lg:px-20 pb-12">
+        <div className="max-w-4xl mx-auto text-center space-y-3">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white">A Closer Look at the Craft</h2>
+          <p className="text-[#C5C6C7] text-sm sm:text-base leading-relaxed">
+            Browse the full collection or use the category filters to explore different creative directions. Select any image to view it in more detail. The gallery is here to spark ideas — if you see a technique or detail you like, tell us what caught your eye when you get in touch.
+          </p>
+        </div>
+      </section>
+
+      {/* SECTION 2: Image Portfolio Showcase Grid */
       <section className="w-full bg-[#1F2833] py-20 px-6 sm:px-12 lg:px-20">
         <div className="w-full grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {filteredGallery.map((item) => (
@@ -120,6 +129,20 @@ export default function Gallery() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* SECTION 3: Gallery Inquiry Invitation */}
+      <section className="w-full bg-[#0B0C10] py-20 px-6 sm:px-12 lg:px-20 border-t border-[#C5C6C7]/10">
+        <div className="max-w-5xl mx-auto rounded-3xl bg-[#1F2833] border border-[#C5C6C7]/15 p-8 sm:p-12 text-center space-y-5">
+          <span className="text-xs uppercase tracking-widest text-[#1E3A8A] font-bold">Inspired by Something You See?</span>
+          <h2 className="text-3xl sm:text-4xl font-black text-white">Let's Create a Piece That Feels Like Yours.</h2>
+          <p className="text-[#C5C6C7] text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
+            Use the gallery as a starting point, not a limit. You can ask about a similar technique, bring a different reference, or combine ideas to develop a direction that suits your own garment and personal style.
+          </p>
+          <button onClick={() => window.location.assign('/contact')} className="px-7 py-3.5 rounded-xl bg-[#1E3A8A] text-white font-bold text-sm hover:scale-105 transition-transform">
+            Discuss a Custom Design
+          </button>
         </div>
       </section>
 
