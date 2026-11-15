@@ -78,7 +78,7 @@ export default function AboutUs() {
                 Whether it is a meaningful illustration, a favourite character, an artistic concept, or an idea that exists only in your imagination, we believe there should be no limits to how you express yourself through what you wear.
               </p>
               <p className="text-[#C5C6C7] text-sm sm:text-base leading-relaxed">
-                We value individuality over imitation and creativity over convention. That is why every piece is approached as an opportunity to experiment, explore, and create something distinctive — something that reflects the person behind it.
+                We value individuality over imitation and creativity over convention. That is why every piece is approached as an opportunity to experiment, explore, and create something distinctive — something that reflects the person behind it. We listen to what matters to each customer, consider the character of the garment, and look for a thoughtful way to bring the two together.
               </p>
             </div>
 
@@ -115,7 +115,43 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* SECTION 4: Studio Core Value Highlights (#1F2833 Slate) */}
+      {/* SECTION 4: Our Purpose and Creative Approach */}
+      <section className="w-full bg-[#0B0C10] py-20 px-6 sm:px-12 lg:px-20 border-t border-[#C5C6C7]/10">
+        <div className="max-w-7xl mx-auto space-y-12">
+          <div className="max-w-3xl mx-auto text-center space-y-4">
+            <span className="text-xs uppercase tracking-widest text-[#1E3A8A] font-bold">What Guides Our Work</span>
+            <h2 className="text-3xl sm:text-5xl font-black text-white">Creativity With a Personal Point of View</h2>
+            <p className="text-[#C5C6C7] text-sm sm:text-base leading-relaxed">
+              customize_ans is built around the belief that the clothes we keep can carry memories, interests, and individual style. Customization gives those pieces another way to tell a story.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="rounded-2xl border border-[#C5C6C7]/15 bg-[#1F2833] p-7 space-y-3">
+              <h3 className="text-white text-xl font-bold">Our Mission</h3>
+              <p className="text-[#C5C6C7] text-sm leading-relaxed">To help people express their individuality by transforming customer-provided garments and accessories through thoughtful, creative customization.</p>
+            </div>
+            <div className="rounded-2xl border border-[#C5C6C7]/15 bg-[#1F2833] p-7 space-y-3">
+              <h3 className="text-white text-xl font-bold">Our Vision</h3>
+              <p className="text-[#C5C6C7] text-sm leading-relaxed">To make wearable art a meaningful part of personal style, where imagination and craftsmanship can turn familiar pieces into distinctive expressions.</p>
+            </div>
+            <div className="rounded-2xl border border-[#C5C6C7]/15 bg-[#1F2833] p-7 space-y-3">
+              <h3 className="text-white text-xl font-bold">Our Approach</h3>
+              <p className="text-[#C5C6C7] text-sm leading-relaxed">We begin by understanding your idea and the garment, then discuss suitable techniques and creative details before the work moves forward.</p>
+            </div>
+          </div>
+          <div className="rounded-3xl bg-white p-8 sm:p-10 grid lg:grid-cols-2 gap-8 items-center">
+            <div className="space-y-3">
+              <span className="text-xs uppercase tracking-widest text-[#1E3A8A] font-bold">A Shared Creative Process</span>
+              <h3 className="text-2xl sm:text-3xl font-black text-black">The best ideas are made together.</h3>
+            </div>
+            <p className="text-black text-sm sm:text-base leading-relaxed">
+              Your input is part of the process from the beginning. Tell us what you want to communicate, what you enjoy wearing, and which details matter most. We bring our artistic perspective to the conversation while keeping your original intention at the centre of the design.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 5: Studio Core Value Highlights (#1F2833 Slate) */}
       <section className="w-full bg-[#1F2833] py-20 px-6 sm:px-12 lg:px-20 border-t border-[#C5C6C7]/10">
         <div className="w-full grid sm:grid-cols-3 gap-8 text-center">
           <div className="p-8 rounded-2xl bg-white border border-[#E5E7EB] space-y-3">
@@ -133,7 +169,7 @@ export default function AboutUs() {
           <div className="p-8 rounded-2xl bg-white border border-[#E5E7EB] space-y-3">
             <Heart className="w-8 h-8 text-[#1E3A8A] mx-auto" />
             <h4 className="text-black font-bold text-base">Crafted with Passion</h4>
-            <p className="text-black text-xs">Hand painting, embroidery, and custom techniques.</p>
+            <p className="text-black text-xs">Hand painting, embroidery, patchwork, and considered finishing details.</p>
           </div>
         </div>
       </section>
