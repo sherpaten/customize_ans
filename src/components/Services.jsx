@@ -4,7 +4,7 @@ import { ArrowRight, Sparkles, CheckCircle2 } from 'lucide-react';
 // Direct Image Imports
 import HandPaintedImg from '../Assets/Design/Design3.jpeg';
 import PatchworkImg from '../Assets/Patchwork & Appliqué.jpeg';
-import Design2Img from '../Assets/Design/Design2.jpeg';
+import EmbroideryImg from '../Assets/Gallary/Gallary3.jpeg';
 import CustomizeImg from '../Assets/Customize/Customize.jpeg';
 import ArtImg from '../Assets/Design/Art.jpeg';
 import Customize1Img from '../Assets/Customize/Customize1.jpeg';
@@ -33,7 +33,7 @@ export default function Services({ addToCart }) {
       title: "Customized Embroidery",
       description: "Personalize your garments with embroidery, lettering, motifs, and detailed decorative elements that reflect your style and story.",
       badge: "Bespoke",
-      image: Design2Img
+      image: EmbroideryImg
     },
     {
       id: "srv-4",
