@@ -69,7 +69,7 @@ export default function Services() {
       {/* SECTION 1: Page Header Banner */}
       <section className="w-full bg-[#0B0C10] py-20 px-6 sm:px-12 lg:px-20 border-b border-[#C5C6C7]/10">
         <div className="w-full text-center space-y-4">
-          <span className="text-xs font-mono uppercase tracking-widest text-[#66FCF1] font-bold">What We Offer</span>
+          <span className="text-xs font-mono uppercase tracking-widest text-[#1E3A8A] font-bold">What We Offer</span>
           <h1 className="text-4xl sm:text-6xl font-black text-white">Our Customization Services</h1>
           <p className="text-[#C5C6C7] text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
             At customize_ans, we transform your ideas into wearable art through creativity, craftsmanship, and personal expression.
@@ -81,7 +81,7 @@ export default function Services() {
       <section className="w-full bg-[#1F2833] py-20 px-6 sm:px-12 lg:px-20">
         <div className="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {servicesList.map((service) => (
-            <div key={service.id} className="bg-white border border-[#E5E7EB] rounded-2xl p-6 flex flex-col justify-between space-y-6 hover:border-[#66FCF1] transition-all shadow-xl group">
+            <div key={service.id} className="bg-white border border-[#E5E7EB] rounded-2xl p-6 flex flex-col justify-between space-y-6 hover:border-[#1E3A8A] transition-all shadow-xl group">
               <div className="space-y-4">
                 <div className="aspect-video w-full rounded-xl overflow-hidden bg-[#1F2833] relative">
                   <img 
@@ -89,13 +89,13 @@ export default function Services() {
                     alt={service.title} 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <span className="absolute top-3 right-3 bg-[#0B0C10]/90 text-[#66FCF1] text-xs px-3 py-1 rounded-full font-bold border border-[#C5C6C7]/20">
+                  <span className="absolute top-3 right-3 bg-[#0B0C10]/90 text-[#1E3A8A] text-xs px-3 py-1 rounded-full font-bold border border-[#C5C6C7]/20">
                     {service.badge}
                   </span>
                 </div>
 
                 <div className="flex items-center gap-3">
-                  <span className="text-2xl font-black text-[#66FCF1] font-mono">{service.number}.</span>
+                  <span className="text-2xl font-black text-[#1E3A8A] font-mono">{service.number}.</span>
                   <h3 className="text-xl font-bold text-black leading-tight">{service.title}</h3>
                 </div>
 
@@ -108,7 +108,7 @@ export default function Services() {
                 <span className="text-[11px] text-[#16756F] font-semibold">Bespoke Garment Work</span>
                 <button
                   onClick={() => navigate('/contact', { state: { service: service.title } })}
-                  className="px-5 py-2.5 rounded-xl bg-[#66FCF1] text-[#0B0C10] font-bold text-xs shadow-md hover:scale-105 transition-transform"
+                  className="px-5 py-2.5 rounded-xl bg-[#1E3A8A] text-[#0B0C10] font-bold text-xs shadow-md hover:scale-105 transition-transform"
                 >
                   Inquire & Book
                 </button>
@@ -122,17 +122,17 @@ export default function Services() {
       <section className="w-full bg-[#0B0C10] py-20 px-6 sm:px-12 lg:px-20 border-t border-[#C5C6C7]/10">
         <div className="w-full grid sm:grid-cols-3 gap-8 text-center">
           <div className="space-y-2">
-            <CheckCircle2 className="w-8 h-8 text-[#66FCF1] mx-auto" />
+            <CheckCircle2 className="w-8 h-8 text-[#1E3A8A] mx-auto" />
             <h4 className="text-white font-bold text-sm">Customer Garments</h4>
             <p className="text-[#C5C6C7] text-xs">We customize your own provided clothing pieces.</p>
           </div>
           <div className="space-y-2">
-            <Sparkles className="w-8 h-8 text-[#66FCF1] mx-auto" />
+            <Sparkles className="w-8 h-8 text-[#1E3A8A] mx-auto" />
             <h4 className="text-white font-bold text-sm">Original Artwork</h4>
             <p className="text-[#C5C6C7] text-xs">Hand-painted, embroidered, and patched by hand.</p>
           </div>
           <div className="space-y-2">
-            <ArrowRight className="w-8 h-8 text-[#66FCF1] mx-auto" />
+            <ArrowRight className="w-8 h-8 text-[#1E3A8A] mx-auto" />
             <h4 className="text-white font-bold text-sm">Direct Consultation</h4>
             <p className="text-[#C5C6C7] text-xs">Review design proofs before painting begins.</p>
           </div>
