@@ -3,7 +3,7 @@ import { ArrowRight, Sparkles, CheckCircle2 } from 'lucide-react';
 
 // Direct Image Imports
 import HandprintImg from '../Assets/Gallary/Handprint.jpeg';
-import Design1Img from '../Assets/Design/Design1.jpeg';
+import PatchworkImg from '../Assets/Patchwork & Appliqué.jpeg';
 import Design2Img from '../Assets/Design/Design2.jpeg';
 import CustomizeImg from '../Assets/Customize/Customize.jpeg';
 import ArtImg from '../Assets/Design/Art.jpeg';
@@ -25,7 +25,7 @@ export default function Services({ addToCart }) {
       title: "Patchwork & Appliqué",
       description: "Add dimension, texture, and character to your garments using creative fabric combinations, artistic patches, and appliqué techniques.",
       badge: "Trending",
-      image: Design1Img
+      image: PatchworkImg
     },
     {
       id: "srv-3",
