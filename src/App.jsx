@@ -13,7 +13,7 @@ export default function App() {
   return (
     <HelmetProvider>
       <Router>
-        <div className="flex flex-col min-h-screen bg-[#006BFF] text-white">
+        <div className="flex flex-col min-h-screen bg-[#0b0f17] text-white">
           <NavBar />
           <main className="flex-grow">
             <Routes>
