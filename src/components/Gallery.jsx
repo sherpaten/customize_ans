@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { X, ZoomIn } from 'lucide-react';
 
 // Gallary Folder Imports
@@ -29,6 +30,7 @@ import Customize4Img from '../Assets/Customize/Customize4.jpeg';
 import Customize5Img from '../Assets/Customize/Customize5.jpeg';
 
 export default function Gallery() {
+  const navigate = useNavigate();
   const [selectedGalleryImg, setSelectedGalleryImg] = useState(null);
   const [activeTab, setActiveTab] = useState('All');
 
@@ -140,7 +142,7 @@ export default function Gallery() {
           <p className="text-[#C5C6C7] text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
             Use the gallery as a starting point, not a limit. You can ask about a similar technique, bring a different reference, or combine ideas to develop a direction that suits your own garment and personal style.
           </p>
-          <button onClick={() => window.location.assign('/contact')} className="px-7 py-3.5 rounded-xl bg-[#1E3A8A] text-white font-bold text-sm hover:scale-105 transition-transform">
+          <button onClick={() => navigate('/contact')} className="px-7 py-3.5 rounded-xl bg-[#1E3A8A] text-white font-bold text-sm hover:scale-105 transition-transform">
             Discuss a Custom Design
           </button>
         </div>
