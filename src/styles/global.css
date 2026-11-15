@@ -18,12 +18,18 @@ body {
   margin: 0;
 }
 
-/* Site-wide body copy: one pixel larger, black, and semi-bold.
-   Headings and action controls keep their existing visual hierarchy. */
-#root :where(p, li, label, blockquote, figcaption, dt, dd) {
+/* Keep the page content typography white while leaving navbar and footer untouched. */
+main {
+  color: #ffffff;
+}
+
+main :where(h1, h2, h3, h4, h5, h6, p, li, label, blockquote, figcaption, dt, dd) {
+  color: #ffffff !important;
+}
+
+main :where(p, li, label, blockquote, figcaption, dt, dd) {
   font-size: calc(1em + 1px);
   font-weight: 600;
-  color: #000000;
 }
 
 /* Restore the original dark navy canvas behind page sections. */
