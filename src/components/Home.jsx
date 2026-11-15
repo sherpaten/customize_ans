@@ -77,7 +77,7 @@ export default function Home() {
           </h1>
 
           <p className="text-white text-base sm:text-lg leading-relaxed max-w-2xl font-medium">
-            We transform everyday garments provided by our customers into unique, personal expressions through hand painting, patchwork, embroidery, and custom techniques.
+            We transform garments you already own into personal works of wearable art. From expressive hand-painted illustrations to thoughtful patchwork and detailed embroidery, every project begins with your idea and is shaped around your individual style.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 pt-4">
@@ -112,14 +112,14 @@ export default function Home() {
         <div className="text-center max-w-3xl mx-auto space-y-3">
           <span className="text-xs font-mono text-[#1E3A8A] uppercase tracking-widest font-bold">How It Works</span>
           <h2 className="text-3xl sm:text-5xl font-black text-white">3 Steps To Your Custom Piece</h2>
-          <p className="text-[#C5C6C7] text-sm sm:text-base">Simple, collaborative, and tailored directly around your vision.</p>
+          <p className="text-[#C5C6C7] text-sm sm:text-base">A clear, collaborative process helps turn the idea in your mind into a garment you will be excited to wear.</p>
         </div>
 
         <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
           {[
-            { icon: Shirt, step: "01", title: "Provide Your Garment", text: "Bring or ship your denim, jacket, tote, or clothing item directly to our studio." },
-            { icon: Palette, step: "02", title: "Collaborate On Vision", text: "Share your concepts, favorite characters, hand painting ideas, or embroidery themes." },
-            { icon: Scissors, step: "03", title: "Receive Wearable Art", text: "We meticulously craft your piece into an exclusive wearable expression carrying your story." }
+            { icon: Shirt, step: "01", title: "Provide Your Garment", text: "Start with a garment or accessory you would like to personalize. Share its material, condition, and a few photos so we can understand the piece." },
+            { icon: Palette, step: "02", title: "Collaborate On Vision", text: "Tell us the story, colours, references, lettering, or artwork you have in mind. We will discuss the best approach for your garment." },
+            { icon: Scissors, step: "03", title: "Receive Wearable Art", text: "Once the design direction is agreed, we bring the details together with care and keep the focus on the vision we planned with you." }
           ].map((item, idx) => (
             <div key={idx} className="bg-white border border-[#E5E7EB] p-8 rounded-2xl space-y-4 hover:border-[#1E3A8A] transition-all group shadow-lg">
               <div className="flex items-center justify-between">
@@ -194,7 +194,38 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION 4: Services Showcase */}
+      {/* SECTION 4: What Makes Each Piece Personal */}
+      <section className="w-full bg-[#0B0C10] py-20 px-6 sm:px-12 lg:px-20 border-t border-[#C5C6C7]/10">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-5">
+            <span className="text-xs uppercase tracking-widest text-[#1E3A8A] font-bold">Designed Around You</span>
+            <h2 className="text-3xl sm:text-5xl font-black text-white leading-tight">Your Garment. Your Idea. Your Kind of Art.</h2>
+            <p className="text-[#C5C6C7] text-sm sm:text-base leading-relaxed">
+              A favourite jacket, a well-loved pair of jeans, or a simple tote can become a canvas for something personal. We work with the items you bring to us and explore how illustration, colour, texture, and detail can give them a fresh expression.
+            </p>
+            <p className="text-[#C5C6C7] text-sm sm:text-base leading-relaxed">
+              You do not need a finished design to get started. A reference image, a rough idea, a meaningful symbol, or a conversation about your style is enough to begin exploring possibilities together.
+            </p>
+            <button onClick={() => navigate('/contact')} className="px-6 py-3 rounded-xl bg-[#1E3A8A] text-white font-bold text-xs flex items-center gap-2 hover:scale-105 transition-transform">
+              Discuss Your Idea <ArrowRight className="w-4 h-4" />
+            </button>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-4">
+            <div className="bg-white rounded-2xl p-6 space-y-3">
+              <Palette className="w-8 h-8 text-[#1E3A8A]" />
+              <h3 className="text-black font-bold text-lg">Start With Inspiration</h3>
+              <p className="text-black text-sm leading-relaxed">Bring references, colours, themes, or a personal story. We can help shape the creative direction.</p>
+            </div>
+            <div className="bg-white rounded-2xl p-6 space-y-3">
+              <Scissors className="w-8 h-8 text-[#1E3A8A]" />
+              <h3 className="text-black font-bold text-lg">Choose Your Details</h3>
+              <p className="text-black text-sm leading-relaxed">Explore suitable techniques and placement for the garment or accessory you provide.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 5: Services Showcase */}
       <section className="w-full bg-[#1F2833] py-24 px-6 sm:px-12 lg:px-20 space-y-12 border-t border-[#C5C6C7]/10">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
           <div>
@@ -241,7 +272,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION 5: Portfolio Showcase */}
+      {/* SECTION 6: Portfolio Showcase */}
       <section className="w-full bg-[#0B0C10] py-24 px-6 sm:px-12 lg:px-20 border-t border-[#C5C6C7]/10">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-5">
@@ -283,7 +314,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION 6: Call-To-Action Banner */}
+      {/* SECTION 7: Call-To-Action Banner */}
       <section className="w-full bg-gradient-to-r from-[#1E3A8A] via-[#1E3A8A] to-[#1F2833] py-20 px-6 sm:px-12 text-center text-[#0B0C10] space-y-6">
         <h2 className="text-3xl sm:text-5xl font-black text-[#0B0C10]">Have a Garment Waiting for a New Story?</h2>
         <p className="text-[#0B0C10]/90 text-sm sm:text-base font-semibold max-w-2xl mx-auto">
