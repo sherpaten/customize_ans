@@ -108,7 +108,7 @@ export default function Gallery() {
         </div>
       </section>
 
-      {/* SECTION 2: Image Portfolio Showcase Grid */
+      {/* SECTION 2: Image Portfolio Showcase Grid */}
       <section className="w-full bg-[#1F2833] py-20 px-6 sm:px-12 lg:px-20">
         <div className="w-full grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {filteredGallery.map((item) => (
